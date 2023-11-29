@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Haoyang Wang's page</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Haoyang Wang's Resume">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Haoyang Wang">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" as="document" href="life.html">
+    <link rel="preload" as="document" href="edu.html">
+    <link rel="preload" as="document" href="work.html">
+    <link rel="preload" as="document" href="contact.html">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="150" ></canvas>
+    <svg id="mySvg" width="100" height="100">
+        <polygon
+            points="50,10 61.8,30 92.4,30 68.2,51.8 50,70 31.8,51.8 7.6,30 38.2,30"
+            fill="yellow"
+        />
+    </svg>
+    
+    <header>
+        <h1>Let's get started</h1>
+        <h2>About Me</h2>
+        <details open>
+            <summary>Brief Introduction</summary>
+            <ul>
+                <li>Name: Haoyang Wang</li>
+                <li>Age: 22</li>
+                <li>Occupation: Student</li>
+                <li>Major: Mathematics-Computer Science</li>
+                <li>E-mail: wang903645150@gmail.com</li>
+                <li>Phone number: 1 + 626 592 0313</li>
+            </ul>
+        </details>
+    </header>
+    <main>
+        <h2 id = "catalogue-size">catalogue</h2>
+            <ol>
+                <li>Personal Story<br>Here I write something about my life in China and United States.</li>
+                    <a href="life.html">show more</a>
+                <li>Education<br>Here I talk about my education.</li>
+                    <a href="edu.html">show more</a>
+                <li>Working experience<br></li>
+                    <a href="work.html">show more</a>
+                <li>Leave some comments<br></li>
+                    <a href="contact.html">show more</a>
+            </ol>
+    </main>
+    <footer>
+        <p id = "motto">Motto:<br> Doing things you don't want to do makes you stronger<br>
+    </footer>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var context = canvas.getContext("2d");
+        context.font = "28px Arial";
+        context.fillStyle = "yellow";
+        context.fillText("Welcome to my site", 50, 100);
+    </script>
+
+</body>
+</html>

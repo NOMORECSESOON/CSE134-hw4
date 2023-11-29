@@ -1,0 +1,98 @@
+ 
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+    "sidebar content"
+    "header header";
+    height: 100vh;
+    margin: 0;
+    background-color: grey;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "sidebar content";
+    height: 50vh;
+    width: 100vh;
+    margin: 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    grid-area: header;
+    font-size: 24px;
+    height: 45vh;
+}
+
+h2 {
+    font-size: 90%;
+}
+
+footer {
+    background-color: gray;
+    animation-name: change-background;
+    animation-duration: 4s;
+  }
+  
+  @keyframes 
+change-background {
+    0%   {background-color: pink;}
+    25%  {background-color: yellow;}
+    50%  {background-color: lightblue;}
+    100% {background-color: gray;}
+}
+
+main:hover {
+    background-color: rgb(123, 247, 148);
+}
+
+
+footer {
+    color: #ba91ee;
+    text-align: center;
+    padding: 10px;
+}
+
+.content {
+    background-color: #f0f0f0;
+    padding: 10px;
+    grid-area: content;
+}
+
+.sidebar {
+    background-color: #ddd;
+    padding: 10px;
+    grid-area: sidebar;
+}
+
+#catalogue-size{
+    font-size: 40px;
+}
+
+main li {
+    font-size: 1.5em;
+}
+
+main a{
+    font-size: 1.5em;
+}
+
+#motto{
+    color:greenyellow;
+    font-size: 2em;
+}

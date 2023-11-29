@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+form .error-message{
+    display: flex;
+    flex-direction: column;
+    margin: 1 em;
+}
+
+output{
+    padding: 8px;
+    font-size: 1.5 em;
+    line-height: 2 em;
+    color: red;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea, button{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+body.white{
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+#modeToggle{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+
+input:invalid {
+    border: 2px dashed red;
+}
+  
+input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+}
+  
+  input:valid {
+    border: 2px solid black;
+}
+
+
+
+.error {
+    width: 100%;
+    padding: 0;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  
+    box-sizing: border-box;
+}
+  
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.error.active {
+    animation: fadeOut 3s ease-out forwards;
+    padding: 0.3em;
+}
+
+.info-normal {
+    color: green;
+}
+
+.info-warning {
+    color: orange;
+}
+
+.info-error {
+    color: red;
+}
+
